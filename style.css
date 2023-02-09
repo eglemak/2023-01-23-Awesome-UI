@@ -22,6 +22,37 @@ body {
   color: #111111;
 }
 
+header nav .nav-button {
+  font-variant: small-caps;
+  background-color: rgb(100, 123, 100);
+  color: #EEEEEE;
+  border: 3px solid rgb(100, 123, 100);
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+header nav .nav-button:hover {
+  border: 3px solid rgb(14, 112, 175);
+}
+
+.big-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 27px 29px 26px 29px;
+  background-color: rgb(100, 123, 100);
+  color: #EEEEEE;
+  border: 3px solid rgb(100, 123, 100);
+  border-radius: 3px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  width: 350px;
+}
+.big-button svg {
+  fill: #EEEEEE;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -53,21 +84,12 @@ header .header-nav ul.nav-list {
   text-transform: capitalize;
   gap: 48px;
 }
-header .header-nav .button {
-  background-color: rgb(100, 123, 100);
-  color: white;
-  border: 3px solid rgb(100, 123, 100);
-  border-radius: 3px;
-  padding: 10px 15px;
-}
-header .header-nav .button:hover {
-  border: 3px solid rgb(14, 112, 175);
-}
 
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
+  padding-left: 40px;
 }
 .hero .text .hero-title {
   color: rgb(51, 51, 51);
@@ -81,8 +103,10 @@ header .header-nav .button:hover {
   color: rgb(79, 79, 79);
   font-family: "Rubik", sans-serif;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   font-size: 20px;
+  margin-top: 24px;
+  margin-bottom: 32px;
 }
 .hero .foto {
   display: grid;

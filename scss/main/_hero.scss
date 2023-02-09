@@ -1,10 +1,12 @@
 @use '../variables/colors';
 @use '../variables/font';
+@use '../buttons';
 
 .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    padding-left: 40px;
 
     .text {
         .hero-title {
@@ -20,8 +22,10 @@
             color: colors.$description;
             font-family: font.$font;
             font-style: normal;
-            font-weight: 500;
+            font-weight: 300;
             font-size: 20px;
+            margin-top: 24px;
+            margin-bottom: 32px;
         }
     }
 

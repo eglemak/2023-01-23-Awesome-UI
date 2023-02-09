@@ -1,8 +1,11 @@
 @use 'scss/variables/colors';
 @use 'scss/variables/font';
+
 @use 'scss/base';
+@use 'scss/buttons';
 @use 'scss/header';
 @use 'scss/footer';
+
 @use 'scss/main/hero';
 @use 'scss/main/sales';
 @use 'scss/main/cards';

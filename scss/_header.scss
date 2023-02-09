@@ -1,5 +1,6 @@
 @use 'variables/colors';
 @use 'variables/font';
+@use 'buttons';
 
 header {
     display: flex;
@@ -37,18 +38,6 @@ header {
                 text-transform: capitalize;
                 gap: 48px;
             }
-        }
-
-        .button {
-            background-color: colors.$button;
-            color: white;
-            border: 3px solid colors.$button;
-            border-radius: 3px;
-            padding: 10px 15px;
-        }
-
-        .button:hover {
-            border: 3px solid colors.$button-hover;
-        }  
+        } 
     }   
 }

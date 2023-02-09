@@ -1,0 +1,32 @@
+@use '../variables/colors';
+@use '../variables/font';
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    .text {
+        .hero-title {
+            color: colors.$title;
+            font-family: font.$font;
+            font-variant: small-caps;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 48px;
+        }
+
+        .hero-description {
+            color: colors.$description;
+            font-family: font.$font;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 20px;
+        }
+    }
+
+    .foto {
+        display: grid;
+        justify-content: center;
+    }
+}

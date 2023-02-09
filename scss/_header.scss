@@ -1,0 +1,54 @@
+@use 'variables/colors';
+@use 'variables/font';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+
+    .logo {
+        a {
+            display: flex;
+            align-items: center;
+
+            .logo-title {
+                font-size: 15px;
+                font-weight: 700;
+                text-transform: uppercase;
+                color: colors.$logo-title;
+                padding-left: 12px;
+            }
+        }
+    }
+
+    .header-nav {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+
+        ul {
+            &.nav-list {
+                list-style-type: none;
+                display: flex;
+                align-items: center;
+                flex-direction: row;
+                color: colors.$title;
+                font-variant: small-caps;
+                text-transform: capitalize;
+                gap: 48px;
+            }
+        }
+
+        .button {
+            background-color: colors.$button;
+            color: white;
+            border: 3px solid colors.$button;
+            border-radius: 3px;
+            padding: 10px 15px;
+        }
+
+        .button:hover {
+            border: 3px solid colors.$button-hover;
+        }  
+    }   
+}

@@ -1,0 +1,27 @@
+@use 'variables/colors';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: colors.$body-background;
+}
+
+.container {
+    background-color: colors.$container-background;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 50px;
+
+    .inner-container {
+        margin-left: 140px;
+        margin-right: 140px;  
+    }
+
+    a {
+        text-decoration: none;
+        color: colors.$link-color;
+    }
+}

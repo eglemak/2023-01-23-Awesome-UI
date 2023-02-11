@@ -218,10 +218,44 @@ footer {
   justify-content: center;
 }
 
+.sales {
+  display: flex;
+  gap: 100px;
+}
+.sales .info {
+  width: 45%;
+  align-self: center;
+}
+.sales .info span {
+  color: rgb(243, 181, 98);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.sales .info .title {
+  color: rgb(100, 123, 100);
+  font-size: 41px;
+  text-transform: uppercase;
+  margin-top: 17px;
+  margin-bottom: 40px;
+}
+.sales .info .description {
+  color: rgb(79, 79, 79);
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+.sales .info a.big-button span, .sales .info a.big-button svg {
+  color: #EEEEEE;
+  font-size: 16px;
+}
+
 .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 120px;
 }
 .cards .top {
   display: flex;

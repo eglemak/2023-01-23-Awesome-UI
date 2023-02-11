@@ -4,6 +4,7 @@
 
 body {
   background-color: #E5E5E5;
+  margin: 0;
 }
 
 .container {
@@ -34,7 +35,7 @@ header nav .nav-button:hover {
   border: 3px solid rgb(14, 112, 175);
 }
 
-.big-button {
+a.big-button span {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,32 +50,51 @@ header nav .nav-button:hover {
   font-family: "Rubik", sans-serif;
   width: 350px;
 }
-.big-button svg {
+a.big-button span svg {
   fill: #EEEEEE;
 }
 
-header {
+footer .send-message button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 21px 22px 21px 22px;
+  background-color: rgb(100, 123, 100);
+  color: #EEEEEE;
+  border: 3px solid rgb(100, 123, 100);
+  border-radius: 3px;
+  font-size: 12px;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-family: "Rubik", sans-serif;
+  width: 283px;
+}
+footer .send-message button svg {
+  fill: #EEEEEE;
+}
+
+.header {
   display: flex;
   justify-content: space-between;
   margin-bottom: 70px;
 }
-header .logo a {
+.header .logo a {
   display: flex;
   align-items: center;
 }
-header .logo a .logo-title {
+.header .logo a .logo-title {
   font-size: 15px;
   font-weight: 700;
   text-transform: uppercase;
   color: rgb(100, 123, 100);
   padding-left: 12px;
 }
-header .header-nav {
+.header .header-nav {
   display: flex;
   align-items: center;
   gap: 48px;
 }
-header .header-nav ul.nav-list {
+.header .header-nav ul.nav-list {
   list-style-type: none;
   display: flex;
   align-items: center;
@@ -85,11 +105,96 @@ header .header-nav ul.nav-list {
   gap: 48px;
 }
 
+footer {
+  background-color: #F0DCC5;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.footer .footer-left {
+  width: 25%;
+}
+.footer .footer-left .logo a {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-left .logo a .logo-title {
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: rgb(100, 123, 100);
+  padding-left: 12px;
+}
+.footer .footer-left .description,
+.footer .footer-left .copyright,
+.footer .footer-left span {
+  color: rgb(79, 79, 79);
+  font-size: 14px;
+}
+.footer .footer-left .description {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+.footer .footer-left span {
+  display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 19px;
+}
+.footer .footer-left ul {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  gap: 16px;
+}
+.footer .footer-right {
+  width: 75%;
+  padding-left: 65px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.footer .footer-right ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.footer .footer-right .company-list .title,
+.footer .footer-right .support-list .title {
+  color: rgb(100, 123, 100);
+  font-size: 20px;
+  padding-bottom: 24px;
+}
+.footer .footer-right .company-list ul li,
+.footer .footer-right .support-list ul li {
+  font-size: 16px;
+  color: rgb(51, 51, 51);
+  padding-bottom: 12px;
+}
+.footer .footer-right .send-message {
+  font-size: 20px;
+  text-transform: uppercase;
+  color: rgb(100, 123, 100);
+  display: flex;
+  flex-direction: column;
+}
+.footer .footer-right .send-message input {
+  margin-top: 13px;
+  margin-bottom: 28px;
+  width: 283px;
+  height: 113px;
+  border: none;
+}
+
 .hero {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   padding-left: 40px;
+  margin-bottom: 150px;
 }
 .hero .text .hero-title {
   color: rgb(51, 51, 51);
@@ -111,4 +216,77 @@ header .header-nav ul.nav-list {
 .hero .foto {
   display: grid;
   justify-content: center;
+}
+
+.upsell {
+  display: flex;
+  gap: 100px;
+}
+.upsell .info {
+  width: 45%;
+}
+.upsell .info span {
+  color: rgb(243, 181, 98);
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.upsell .info .title {
+  color: rgb(100, 123, 100);
+  font-size: 41px;
+  text-transform: uppercase;
+  margin-top: 17px;
+  margin-bottom: 40px;
+}
+.upsell .info .description {
+  color: rgb(79, 79, 79);
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+.upsell .info a.big-button span, .upsell .info a.big-button svg {
+  color: #EEEEEE;
+  font-size: 16px;
+}
+.upsell .card-list ul {
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+.upsell .card-list ul li {
+  padding: 40px;
+  border-radius: 10px;
+}
+.upsell .card-list ul li:hover {
+  background-color: #EEEEEE;
+}
+.upsell .card-list ul li:hover .logo {
+  background-color: #647B64;
+}
+.upsell .card-list ul li:hover .logo svg {
+  fill: #EEEEEE;
+}
+.upsell .card-list ul li .logo {
+  background-color: #EEEEEE;
+  padding: 18px 10px 8px;
+  border-radius: 10px;
+}
+.upsell .card-list ul li .logo svg {
+  fill: #647B64;
+}
+.upsell .card-list ul li .title {
+  font-size: 24px;
+  font-variant: small-caps;
+  text-transform: capitalize;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+.upsell .card-list ul li .description {
+  font-size: 13px;
+  color: rgb(79, 79, 79);
+  font-family: "Rubik", sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */

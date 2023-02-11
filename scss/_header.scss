@@ -2,7 +2,7 @@
 @use 'variables/font';
 @use 'buttons';
 
-header {
+.header {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
@@ -16,7 +16,7 @@ header {
                 font-size: 15px;
                 font-weight: 700;
                 text-transform: uppercase;
-                color: colors.$logo-title;
+                color: colors.$title;
                 padding-left: 12px;
             }
         }
@@ -33,7 +33,7 @@ header {
                 display: flex;
                 align-items: center;
                 flex-direction: row;
-                color: colors.$title;
+                color: colors.$black-title;
                 font-variant: small-caps;
                 text-transform: capitalize;
                 gap: 48px;

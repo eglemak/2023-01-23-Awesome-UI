@@ -18,26 +18,53 @@ header {
     }
 }
 
-.big-button {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 27px 29px 26px 29px;
-    background-color: colors.$button;
-    color: colors.$white;
-    border: 3px solid colors.$button;
-    border-radius: 3px;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
-    font-family: font.$font;
-    width: 350px;
-
-    svg {
-        fill: colors.$white;
+a  {
+    &.big-button span {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    
+        padding: 27px 29px 26px 29px;
+        background-color: colors.$button;
+        color: colors.$white;
+        border: 3px solid colors.$button;
+        border-radius: 3px;
+        font-size: 16px;
+        text-transform: uppercase;
+        cursor: pointer;
+        font-family: font.$font;
+        width: 350px;
+    
+        svg {
+            fill: colors.$white;
+        }
+       
     }
-   
+}
+
+footer {
+    .send-message {
+        button {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+    
+            padding: 21px 22px 21px 22px;
+            background-color: colors.$button;
+            color: colors.$white;
+            border: 3px solid colors.$button;
+            border-radius: 3px;
+            font-size: 12px;
+            text-transform: uppercase;
+            cursor: pointer;
+            font-family: font.$font;
+            width: 283px;
+        
+            svg {
+                fill: colors.$white;
+            }
+        }
+    }
 }
 
 

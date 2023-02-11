@@ -7,10 +7,11 @@
     grid-template-columns: 1fr 1fr;
     align-items: center;
     padding-left: 40px;
+    margin-bottom: 150px;
 
     .text {
         .hero-title {
-            color: colors.$title;
+            color: colors.$black-title;
             font-family: font.$font;
             font-variant: small-caps;
             font-style: normal;

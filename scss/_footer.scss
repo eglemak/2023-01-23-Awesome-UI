@@ -1,0 +1,108 @@
+@use 'variables/colors';
+@use 'variables/font';
+
+@use 'buttons';
+
+
+
+footer {
+    background-color: colors.$footer-background;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+
+    .footer-left {
+        width: 25%;
+
+        .logo {
+            a {
+                display: flex;
+                align-items: center;
+    
+                .logo-title {
+                    font-size: 15px;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: colors.$title;
+                    padding-left: 12px;
+                }
+            }
+        }
+
+        .description,
+        .copyright,
+        span {
+            color: colors.$description;
+            font-size: 14px;
+        }
+
+        .description {
+            margin-top: 16px;
+            margin-bottom: 16px;
+        }
+
+        span {
+            display: inline-block;
+            margin-top: 10px;
+            margin-bottom: 19px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+            display: flex;
+            gap: 16px;
+        }
+    }
+
+    .footer-right {
+        width: 75%;
+        padding-left: 65px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .company-list,
+        .support-list {
+            .title {
+                color: colors.$title;
+                font-size: 20px;
+                padding-bottom: 24px;
+            }
+            ul {
+                li {
+                    font-size: 16px;
+                    color: colors.$black-title;
+                    padding-bottom: 12px;
+                }
+            }
+        }
+
+        .send-message {
+            font-size: 20px;
+            text-transform: uppercase;
+            color: colors.$title;
+
+            display: flex;
+            flex-direction: column;
+
+            input {
+                margin-top: 13px;
+                margin-bottom: 28px;
+                width: 283px;
+                height: 113px;
+                border: none;
+            }
+        }
+    }
+}

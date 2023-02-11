@@ -1,0 +1,92 @@
+@use '../variables/colors';
+@use '../variables/font';
+
+@use '../buttons';
+
+.cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .top {
+        display: flex;
+        flex-direction: column;
+        span {
+            color: colors.$extra;
+            font-size: 24px;
+            text-transform: uppercase;
+            display: block;
+            align-self: center;
+        }
+
+        .title {
+            color: colors.$title;
+            font-size: 41px;
+            text-transform: uppercase;
+
+            margin-top: 17px;
+            margin-bottom: 50px;
+        }
+    }
+
+    .bottom {
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin-top: 0px;
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+
+            li {
+                background-color: colors.$white;
+                padding: 70px 50px;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: colors.$logo;
+                    
+                    .logo {
+                        svg {
+                            fill: colors.$white;
+                        }
+                    }
+                    .title, 
+                    .description {
+                        color: colors.$white;
+                    }
+                }
+
+                .logo {
+
+                    svg {
+                        fill: colors.$logo;
+                    }
+                }
+
+                .title {
+                    font-size: 24px;
+                    font-variant: small-caps;
+                    margin-top: 16px;
+                    margin-bottom: 6px;
+
+                    :first-child {
+                        text-transform: uppercase;
+                    }
+                    :last-child {
+                        font-variant: small-caps;
+                    }
+                }
+
+                .description {
+                    font-size: 13px;
+                    color: colors.$description;
+                    font-family: font.$font;
+                    font-style: normal;
+                    font-weight: 400;
+                }
+            }
+        }
+    }
+}
